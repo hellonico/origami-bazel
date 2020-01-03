@@ -17,6 +17,7 @@ maven_install(
     artifacts = [
         "junit:junit:4.12",
         "origami:origami:4.1.2-7",
+        "origami:filters:1.2",
         "org.clojure:clojure:1.8.0"
     ],
     fetch_sources = True,

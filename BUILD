@@ -8,6 +8,7 @@ java_library(
     srcs = glob(["src/main/java/com/example/myproject/*.java"]),
     deps = [
          "@maven//:origami_origami",
+         "@maven//:origami_filters",
          "@maven//:org_clojure_clojure",
          "@maven//:opencv_opencv"
     ],
@@ -24,6 +25,13 @@ java_binary(
     main_class = "com.example.myproject.Cam",
     runtime_deps = [":java-maven-lib"],
 )
+
+java_binary(
+    name = "java-greycam",
+    main_class = "com.example.myproject.GreyCam",
+    runtime_deps = [":java-maven-lib"],
+)
+
 
 java_test(
     name = "tests",
