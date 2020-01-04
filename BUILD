@@ -15,19 +15,19 @@ java_library(
 )
 
 java_binary(
-    name = "java-maven",
+    name = "origami-check",
     main_class = "com.example.myproject.App",
     runtime_deps = [":java-maven-lib"],
 )
 
 java_binary(
-    name = "java-webcam",
+    name = "origami-webcam",
     main_class = "com.example.myproject.Cam",
     runtime_deps = [":java-maven-lib"],
 )
 
 java_binary(
-    name = "java-greycam",
+    name = "origami-greycam",
     main_class = "com.example.myproject.GreyCam",
     runtime_deps = [":java-maven-lib"],
 )
