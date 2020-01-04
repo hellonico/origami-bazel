@@ -32,6 +32,19 @@ java_binary(
     runtime_deps = [":java-maven-lib"],
 )
 
+java_binary(
+    name = "origami-cartooncam",
+    main_class = "com.example.myproject.CartoonCam",
+    runtime_deps = [":java-maven-lib"],
+)
+
+java_binary(
+    name = "origami-yolocam",
+    main_class = "com.example.myproject.YoloCam",
+    runtime_deps = [":java-maven-lib"],
+)
+
+
 
 java_test(
     name = "tests",
