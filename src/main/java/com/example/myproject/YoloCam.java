@@ -16,6 +16,7 @@ public class YoloCam {
         Origami.init();
         Camera web = new Camera().device(0);
         Filter p = new origami.filters.detect.Yolo("networks.yolo:yolov3-tiny:1.0.0");
+        // Filter p = new origami.filters.detect.Yolo("networks.yolo:yolov2-tiny:1.0.0");
         web.filter(p).fullscreen().run();
   }
 
