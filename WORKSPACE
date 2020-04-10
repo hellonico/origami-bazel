@@ -16,9 +16,8 @@ load("@rules_jvm_external//:defs.bzl", "maven_install")
 maven_install(
     artifacts = [
         "junit:junit:4.12",
-        "origami:origami:4.2.0-0",
-        "origami:filters:1.2",
-        "org.clojure:clojure:1.8.0"
+        "origami:origami:4.3.0-2",
+        "origami:filters:1.12"
     ],
     fetch_sources = True,
     repositories = [
