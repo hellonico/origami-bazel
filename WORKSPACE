@@ -16,7 +16,7 @@ load("@rules_jvm_external//:defs.bzl", "maven_install")
 maven_install(
     artifacts = [
         "junit:junit:4.12",
-        "origami:origami:4.3.0-2",
+        "origami:origami:4.3.0-6",
         "origami:filters:1.12"
     ],
     fetch_sources = True,
