@@ -45,6 +45,14 @@ java_binary(
 )
 
 
+java_binary(
+    name = "origami-agenet",
+    main_class = "com.example.myproject.AgeNet",
+    runtime_deps = [":java-maven-lib"],
+)
+
+
+
 
 java_test(
     name = "tests",

@@ -35,6 +35,7 @@ $ ./bazel-bin/origami-check
 - *origami-greycam*: run the webcam with an extra origami filter to turn the stream to grey 
 - *origami-cartooncam*: run the webcam with an extra origami filter to cartoonify the stream
 - *origami-yolocam*: run the webcam with yolo detection
+- *origami-agenet*: run DNN agenet to find age of input picture
 
 # yolo proof
 
@@ -58,4 +59,12 @@ $ bazel test $(bazel query //...)
 $ bazel clean
 $ bazel build //...
 $ bazel test //...
+```
+
+# when bazel looks broken
+
+```
+sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
+sudo xcodebuild -license accept
+bazel clean --expunge
 ```
